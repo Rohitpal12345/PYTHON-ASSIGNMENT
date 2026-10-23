@@ -93,41 +93,60 @@ list=[10, 23, 11, 12, 33, 44, 2, 5,6]
 # print("Repetitive element in given list ->",repeat_ele)
 
 #9.Remove all the odd elements from the list [10, 23, 11,12,33,44,2,5, 6]
-list=[10,23,11,12,33,44,2,5,6]
-for i in list[:]:
-    if i%2!=0:
-        #print("odd",i)
+# list=[10,23,11,12,33,44,2,5,6]
+# for i in list[:]:
+#     if i%2!=0:
+#         #print("odd",i)
     
-        list.remove(i)
+#         list.remove(i)
 
-print("after removed odd element from list will be->",list)
+# print("after removed odd element from list will be->",list)
 #10. wap to find all pairs in a list whose sum equals to given target.
 #Example:[2,4,3,5,7,8,9]
 #Target=7
 
-nums_list=[2,4,3,5,7,8,9]
-target=7
+# nums_list=[2,4,3,5,7,8,9]
+# target=7
 
 # here create a function
 
-def find_pairs(nums_list,target):
-   pairs=[]
-   for i in range(len(nums_list)):
-       for j in range(i+1,len(nums_list)):
-           if nums_list[i]+nums_list[j]==target:
-               pairs.append(nums_list[i]+nums_list[j])
+# def find_pairs(nums_list,target):
+#    pairs=[]
+#    for i in range(len(nums_list)):
+#        for j in range(i+1,len(nums_list)):
+#            if nums_list[i]+nums_list[j]==target:
+#                pairs.append(nums_list[i]+nums_list[j])
                
-   return pairs
+#    return pairs
 
-print(find_pairs(nums_list,target))
+# print(find_pairs(nums_list,target))
 
+#11. find the smallest missing positive number in given list.
 
-    
-        
+# lst=[3,4,-1,1,-3,5]
+# i=1
 
-      
-  
-    
+# while i in lst:
+#     i=i+1
+# print(i)
+
+#o/p =2
+
+#12.Consecutive elements diffrence in given list.
+# lst=[10,15,25,40,60]
+# res=[lst[i+1]-lst[i] for i in range(len(lst)-1)]# list comprehension
+# print(res)
+
+#o/p=[5,10,15,20]
+
+# lst=[10,15,25,40,60]
+
+# res = []
+
+# for i in range(len(lst)-1):
+#     res.append(lst[i+1] - lst[i]) #Iska matlab hai current element ke next element mein se current element ko subtract karna.
+#                                   #aur append ke through empty list res[] add krna.
+# print(res)
 
 
         
