@@ -425,11 +425,35 @@
 
 #34. Replace all spaces with hyphens (-) in "Python is easy to learn" → "Python-is-easy-to-learn".
 
-string="Python is easy to learn"
-for i in string:
-    if i==" ":
-        temp=string.replace(i,"-")
-print(temp)
+# string="Python is easy to learn"
+# for i in string:
+#     if i==" ":
+#         temp=string.replace(i,"-")
+# print(temp)
+
+#31. Extract a substring from "Python Programming" → from index 0 to 6 should give "Python".
+
+# string="Python Programming"
+# # temp=string[0:7]
+# # print(temp)
+# print(string[0:7])
+
+#Without slicing
+# string="Python Programming"
+# temp=""
+# for i in range(6):
+#     temp+=string[i]
+# print(temp)
+
+#32. Check if one string is a substring of another (e.g., "gram" is a substring of "Programming").
+
+# string="Programming"
+# temp="gram"
+# if temp in string:
+#     print(temp,"is a substring of given string")
+# else:
+#     print(temp,"not exist in given string")
+
 
 
             

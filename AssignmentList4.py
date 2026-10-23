@@ -101,6 +101,26 @@ for i in list[:]:
         list.remove(i)
 
 print("after removed odd element from list will be->",list)
+#10. wap to find all pairs in a list whose sum equals to given target.
+#Example:[2,4,3,5,7,8,9]
+#Target=7
+
+nums_list=[2,4,3,5,7,8,9]
+target=7
+
+# here create a function
+
+def find_pairs(nums_list,target):
+   pairs=[]
+   for i in range(len(nums_list)):
+       for j in range(i+1,len(nums_list)):
+           if nums_list[i]+nums_list[j]==target:
+               pairs.append(nums_list[i]+nums_list[j])
+               
+   return pairs
+
+print(find_pairs(nums_list,target))
+
 
     
         
